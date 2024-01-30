@@ -1,0 +1,164 @@
+:root {
+    --black: #0B090A;
+    --black2: #161a1d;
+    --white: #FFFFFFFF;
+    --white2: #F5F3F4;
+    --white3: #d3d3d3;
+    --red: #BA181B;
+    --red2: #E5383B;
+}
+
+#header-container,
+#hero-container {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+body{
+    font-family: 'Epilogue', sans-serif;
+}
+
+.container{
+   
+    margin: 0 auto;
+}
+
+.header {
+    padding: 24px 72px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn {
+    color: var(--white);
+    border-radius: 5PX;
+    font-size: 1rem;
+    padding: 20px 40px;
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.btn-primary:hover {
+    background-color: var(--red2);
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: var(--red);
+}
+
+.btn-outline {
+    border: 2px solid var(--white);
+    background-color: transparent;
+    padding: 12px 24px;
+    font-size: 0.9rem;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.hero-text, .hero-img {
+    flex: 1;/*dividir os elementos igualmente*/
+}
+.hero-img img {
+    max-width: 100%;
+
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    /*espaçamento entre um elementos e outros*/
+}
+
+.hero-text__title {
+    font-size: 56px;
+    line-height: 64px;
+    font-weight: 700;
+}
+
+.hero-text__Subtitle {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+}
+
+#services-container{
+    padding: 96px 72px;
+}
+
+.services-list{
+    display: flex;
+    margin-top: 48px;
+    gap: 32px;
+}
+
+.service-card{
+    background-color: var(--white2);
+    border: 2px solid var(--white3);
+}
+
+.service-card img {
+    width: 100%;
+}
+
+
+.service-card__text{
+    padding: 32px;
+}
+
+.service-card__text h3{
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700; 
+}
+
+.service-card__text p{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.overtitle{
+    color: var(--red2);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+.title{
+    font-size: 44px;
+    line-height: 56px;
+    font-weight: 700;
+}
+
+#location-container{
+    background-color: var(--white2);
+
+}
+#location-container .location{
+    padding: 96px 72px 48px ;
+}
+
+footer{
+    background-color: var(--black);
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 48px 72px;
+}
+
+.footer-copy{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
